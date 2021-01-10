@@ -1,0 +1,184 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="saga:addrastervaluestopoints_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="saga:addrastervaluestopoints" name="alg_id"/>
+      <Option type="QString" value="Add raster values to points" name="component_description"/>
+      <Option type="double" value="590.0000000000001" name="component_pos_x"/>
+      <Option type="double" value="241.19999999999996" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="saga:addrastervaluestopoints_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="SitesPixelValues">
+          <Option type="QString" value="saga:addrastervaluestopoints_1" name="child_id"/>
+          <Option type="QString" value="SitesPixelValues" name="component_description"/>
+          <Option type="double" value="786.8000000000001" name="component_pos_x"/>
+          <Option type="double" value="326.2" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="SitesPixelValues" name="name"/>
+          <Option type="QString" value="RESULT" name="output_name"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" value="inputndwirasters2" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SHAPES">
+          <Option type="Map">
+            <Option type="QString" value="inputsitespoints" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="saga:addrastervaluestopoints_2">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="saga:addrastervaluestopoints" name="alg_id"/>
+      <Option type="QString" value="Add raster values to points" name="component_description"/>
+      <Option type="double" value="518.2" name="component_pos_x"/>
+      <Option type="double" value="447.79999999999984" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="saga:addrastervaluestopoints_2" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="SitesPixelValues2018">
+          <Option type="QString" value="saga:addrastervaluestopoints_2" name="child_id"/>
+          <Option type="QString" value="SitesPixelValues2018" name="component_description"/>
+          <Option type="double" value="733.4" name="component_pos_x"/>
+          <Option type="double" value="543.9999999999998" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="SitesPixelValues2018" name="name"/>
+          <Option type="QString" value="RESULT" name="output_name"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" value="inputndwirasters2018" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SHAPES">
+          <Option type="Map">
+            <Option type="QString" value="inputsitespoints" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="help">
+    <Option type="QString" value="Dr. Andrea Titolo" name="ALG_CREATOR"/>
+    <Option type="QString" value="This algorithm extract pixel values from two sets of raster at each point location defined by a point shapefile. The outputs are two point shapefiles with new columns (as many as any input raster) containing pixel value at that location.&#xa;&#xa;The algorithm uses SAGA's &quot;Add Raster values to point&quot; algorithm." name="ALG_DESC"/>
+    <Option type="QString" value="Dr. Andrea Titolo" name="ALG_HELP_CREATOR"/>
+    <Option type="QString" value="0.1" name="ALG_VERSION"/>
+    <Option type="QString" value="" name="HELP_URL"/>
+    <Option type="QString" value="Extract pixel values at point location from two sets of raster images." name="SHORT_DESCRIPTION"/>
+    <Option type="QString" value="A series of raster, these can be either layers open in QGIS, or files inside a folder. &#xa;In this model, these rasters are supposed to be those relative to the annual analysis." name="inputndwirasters2"/>
+    <Option type="QString" value="A series of raster, these can be either layers open in QGIS, or files inside a folder. &#xa;In this model, these rasters are supposed to be those relative to the 2018 monthly analysis.&#xa;&#xa;This parameter is optional, if not supplied, the model will output only the first shapefile related to &quot;InputRasters(years)&quot;" name="inputndwirasters2018"/>
+    <Option type="QString" value="A vector containing points. Of course, these points need to be inside the input rasters coverage. In this model the points represent archaeological sites location." name="inputsitespoints"/>
+    <Option type="QString" value="A vector with the original fields of the input vector and new columns resulted from the &quot;Add Raster Values to Points&quot; algorithm. This output will store the pixel values from the annual rasters." name="saga:addrastervaluestopoints_1:SitesPixelValues"/>
+    <Option type="QString" value="A vector with the original fields of the input vector and new columns resulted from the &quot;Add Raster Values to Points&quot; algorithm. This output will store the pixel values from the 2018 monthly rasters." name="saga:addrastervaluestopoints_2:SitesPixelValues2018"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option type="QString" value="IraqEmergingSites" name="model_group"/>
+  <Option type="QString" value="Get Pixel Values (Two Raster Inputs)" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="inputndwirasters2">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Input Rasters (years)" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="int" value="3" name="layer_type"/>
+      <Option name="metadata"/>
+      <Option type="int" value="0" name="min_inputs"/>
+      <Option type="QString" value="inputndwirasters2" name="name"/>
+      <Option type="QString" value="multilayer" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="inputndwirasters2018">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Input Rasters (2018)" name="description"/>
+      <Option type="int" value="8" name="flags"/>
+      <Option type="int" value="3" name="layer_type"/>
+      <Option name="metadata"/>
+      <Option type="int" value="0" name="min_inputs"/>
+      <Option type="QString" value="inputndwirasters2018" name="name"/>
+      <Option type="QString" value="multilayer" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="inputsitespoints">
+      <Option type="List" name="data_types">
+        <Option type="int" value="0"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Input Sites Points" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="inputsitespoints" name="name"/>
+      <Option type="QString" value="vector" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="saga:addrastervaluestopoints_1:SitesPixelValues">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="SitesPixelValues" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="saga:addrastervaluestopoints_1:SitesPixelValues" name="name"/>
+      <Option type="QString" value="vectorDestination" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="saga:addrastervaluestopoints_2:SitesPixelValues2018">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="SitesPixelValues2018" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="saga:addrastervaluestopoints_2:SitesPixelValues2018" name="name"/>
+      <Option type="QString" value="vectorDestination" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="inputndwirasters2">
+      <Option type="QString" value="inputndwirasters2" name="component_description"/>
+      <Option type="double" value="457.00000000000006" name="component_pos_x"/>
+      <Option type="double" value="62.599999999999994" name="component_pos_y"/>
+      <Option type="QString" value="inputndwirasters2" name="name"/>
+    </Option>
+    <Option type="Map" name="inputndwirasters2018">
+      <Option type="QString" value="inputndwirasters2018" name="component_description"/>
+      <Option type="double" value="135.99999999999994" name="component_pos_x"/>
+      <Option type="double" value="296.1999999999999" name="component_pos_y"/>
+      <Option type="QString" value="inputndwirasters2018" name="name"/>
+    </Option>
+    <Option type="Map" name="inputsitespoints">
+      <Option type="QString" value="inputsitespoints" name="component_description"/>
+      <Option type="double" value="124.39999999999998" name="component_pos_x"/>
+      <Option type="double" value="42.599999999999994" name="component_pos_y"/>
+      <Option type="QString" value="inputsitespoints" name="name"/>
+    </Option>
+  </Option>
+</Option>

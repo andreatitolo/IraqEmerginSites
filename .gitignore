@@ -1,0 +1,73 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+#ignore these subfolders for now
+data/rasters
+data/csv
+
+
+
+# Ignore tif files in the annual and monthly subfolders 
+# but keep the reclassified rasters in the "reclassified" subfolders
+# and the md files
+!data/rasters
+!data/rasters/annual
+data/rasters/annual/*
+!data/rasters/annual/*.md
+!data/rasters/annual/reclassified
+!data/rasters/2018_monthly
+data/rasters/2018_monthly/*
+!data/rasters/2018_monthly/*.md
+!data/rasters/2018_monthly/reclassified
+
+# Output subfolders. Keep the markdown files but ignore all the other files
+!output/shp/
+output/shp/*
+!output/shp/annual
+output/shp/annual/*
+!output/shp/annual/*.md
+!output/shp/monthly
+output/shp/monthly/*
+!output/shp/monthly/*.md
+
+# Ignore specific files
+code/R/04_dataviz.R
+
+

@@ -2,7 +2,7 @@
 # Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs
 
 Inside this repository there are:
-* [Data](https://github.com/andreatitolo/IraqEmergingSites/tree/master/data) for forthcoming paper "*Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs*".
+* [Data](https://github.com/andreatitolo/IraqEmerginSites/tree/master/data) for forthcoming paper "*Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs*".
   * Forthcoming paper in xxxxx (xxx 2021)
   * https://doi.org/xxxxx
   * NOTE: the present digital archive  also  include the datasets relative to the Haditha dam. This dataset is composed simply by a point and polygon shapefile with the site names, but a more in-depth dataset will be published separately in forthcoming publications.
@@ -10,12 +10,12 @@ Inside this repository there are:
   * When downloading the images from figshare, **make sure to place them in their respective folder**, i.e.:
     * Annual NDWI composites ---> data/rasters/annual 
     * 2018 Monthly NDWI composites ---> data/rasters/2018_monthly
-* Google Earth Engine (GEE) scripts, available in the relative [subfolder](https://github.com/andreatitolo/IraqEmergingSites/tree/master/code/GEE), used to generate annual and monthly composites used in the analysis:  
+* Google Earth Engine (GEE) scripts, available in the relative [subfolder](https://github.com/andreatitolo/IraqEmerginSites/tree/master/code/GEE), used to generate annual and monthly composites used in the analysis:  
   * A main script for Landsat 5-8 and Sentinel-2 images.
   * A second script for Landsat 2 images.
-* R code divided in five main scripts and two functions scripts, used to run the analysis, available in the [Script Subfolder](https://github.com/andreatitolo/IraqEmergingSites/tree/master/code/R).
+* R code divided in five main scripts and two functions scripts, used to run the analysis, available in the [Script Subfolder](https://github.com/andreatitolo/IraqEmerginSites/tree/master/code/R).
 * A QGIS Project (.qgz) with shapefile data already loaded with models to run the models embedded into the project itself. The qgis project is saved in QGIS Version 3.10.12, but the models and the project have been tested also in QGIS version 3.16.1.
-* QGIS processing tools, in the [QGIS Subfolder](https://github.com/andreatitolo/IraqEmergingSites/tree/master/QGIS_models_scripts) :
+* QGIS processing tools, in the [QGIS Subfolder](https://github.com/andreatitolo/IraqEmerginSites/tree/master/QGIS_models_scripts) :
   * Standalone qgis models as .model3 file
   * Same models as python scripts
   * An R script written for QGIS (.rsx file)

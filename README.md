@@ -19,6 +19,11 @@ Inside this repository there are:
   * Standalone qgis models as .model3 file
   * Same models as python scripts
   * An R script written for QGIS (.rsx file)
+* The present repository is also archived on zenodo at: 
+  
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4446664.svg)](https://doi.org/10.5281/zenodo.4446664)
+
+
 
 <details> 
   <summary>Repository Tree</summary> 

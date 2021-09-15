@@ -1,8 +1,8 @@
-# IraqEmergingSites
+# IraqEmergingSites 
 # Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs
 
 Inside this repository there are:
-* [Data](https://github.com/andreatitolo/IraqEmerginSites/tree/master/data) for forthcoming paper "*Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs*".
+* [Data](https://github.com/andreatitolo/IraqEmerginSites/tree/master/data) used in the paper "*Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs*".
   * Paper published Open Access in the Special Issue "Remote Sensing for Archaeology", Remote Sensing (2021):  Titolo A. Use of Time-Series NDWI to Monitor Emerging Archaeological Sites: Case Studies from Iraqi Artificial Reservoirs. Remote Sensing. 2021; 13(4):786. https://doi.org/10.3390/rs13040786
   * NOTE: the present digital archive  also  include the datasets relative to the Haditha dam. This dataset is composed simply by a point and polygon shapefile with the site names, but a more in-depth dataset will be published separately in forthcoming publications.
   * Additional NOTE: NDWI Raster data as generated in Google Earth Engine/ Rscripts are not present in this repository due to their size, but they can be downloaded from [HERE](https://figshare.com/s/9c749336fb27342a4f18) (annual NDWI) and [HERE](https://figshare.com/s/ff067df594ce72300409) (2018 monthly NDWI). Alternatively they can be generated using the GEE script or the R scripts in this repository (this however may require additional trial and error with the cloud cover percentage filter, see the paper for more details).
@@ -21,6 +21,8 @@ Inside this repository there are:
 * The present repository is also archived on zenodo at: 
   
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4446664.svg)](https://doi.org/10.5281/zenodo.4446664)
+  ![LICENSE](https://img.shields.io/github/license/andreatitolo/IraqEmerginSites)
+
 
 
 
